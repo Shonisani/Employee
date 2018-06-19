@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  Welcome to {{ title }}!
+
+  <input type="employee"name="input" (change)="inputemployee($event)">
+  <input type="surname" name="input" (change)="inputsurname($event)">
+  <input type="idnumber"name="input"(change)="inputidnumber ($event)">
+  <input type="role"name="input"(change)="inputrole($event)">
+  
+
+  <button (click)="addtoarray()">submit</button>
+  <button (click)="deletea(a)">deletea</button>
+  <ul *ngFor="let x of todolistArray;let a=index">
+  <li>{{x.employee}}  {{x.surname}} {{x.idnumber}} {{x.role}} <button (click)="deletearray()">delete</button></li>
+</ul>
